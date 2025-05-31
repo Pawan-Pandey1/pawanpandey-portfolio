@@ -26,10 +26,10 @@ const Navbar = () => {
         setActiveSection(sectionId);
         setIsOpen(false);
 
-        // const section = document.getElementById(sectionId);
-        // if (section) {
-        // section.scrollIntoView({ behavior: "smooth" });
-        // }
+        const section = document.getElementById(sectionId);
+        if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        }
       };
 
     const menuItems = [
