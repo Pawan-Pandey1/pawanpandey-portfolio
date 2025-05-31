@@ -151,7 +151,7 @@ export const SkillsInfo = [
       school: "Royal Gondwana Public School, Nagpur, Maharastra",
       date: "Sept 2019 - Aug 2020",
       grade: "77.4%",
-      desc: "I completed my class 12 education from Royal Gondwana Public School, Nagpur, Maharashtra, under the CBSE board, where I studied Physics, Chemistry, Mathematics, English, Physical Education .",
+      desc: "I completed my class 12 education from Royal Gondwana Public School, Nagpur, Maharashtra, under the CBSE board, where I studied Physics, Chemistry, Mathematics, English and Physical Education .",
       degree: "CBSE(XII) - PCM",
     },
     {
@@ -160,7 +160,7 @@ export const SkillsInfo = [
       school: "School of Scholars, Nagpur, Maharashtra",
       date: "Aug 2017 - March 2018",
       grade: "79.8%",
-      desc: "I completed my class 10 education from School of Scholars, Nagpur, Maharashtra, under the CBSE board, where I studied Science, Mathematics, English , Sanskrit, Social Science .",
+      desc: "I completed my class 10 education from School of Scholars, Nagpur, Maharashtra, under the CBSE board, where I studied Science, Mathematics, English , Sanskrit and Social Science .",
       degree: "CBSE(X)",
     },
   ];
