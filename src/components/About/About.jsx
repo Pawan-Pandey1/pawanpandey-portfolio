@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import { motion, useAnimation, useInView } from 'framer-motion';
@@ -9,6 +9,15 @@ const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
 
+  // Detect if device is mobile (screen width <= 768px)
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
@@ -17,11 +26,10 @@ const About = () => {
 
   return (
     <section
-  id="about"
-  className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32 relative overflow-hidden"
-  ref={ref}
->
-
+      id="about"
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32 relative overflow-hidden"
+      ref={ref}
+    >
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -37,7 +45,6 @@ const About = () => {
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
-        
         {[...Array(4)].map((_, i) => (
           <motion.div
             key={i}
@@ -118,7 +125,7 @@ const About = () => {
             </motion.span>
           </motion.h2>
 
-          {/* Skills with fixed visibility */}
+          {/* Skills with typing effect */}
           <motion.h3
             className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight"
             variants={{
@@ -153,7 +160,6 @@ const About = () => {
                   </motion.span>
                 )}
               />
-              
               <motion.div
                 className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full"
                 initial={{ width: 0 }}
@@ -228,7 +234,6 @@ const About = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </motion.svg>
               </span>
-              
               <motion.div
                 className="absolute inset-0 bg-white rounded-full opacity-0"
                 whileHover={{
@@ -278,7 +283,7 @@ const About = () => {
               perspective={1000}
               scale={1.05}
               transitionSpeed={1000}
-              gyroscope={true}
+              gyroscope={!isMobile} // <--- disables gyroscope on mobile, keeps touch tilt
               style={{
                 boxShadow: '0 20px 60px rgba(251, 146, 60, 0.3), inset 0 0 0 1px rgba(251, 146, 60, 0.2)'
               }}
@@ -296,7 +301,6 @@ const About = () => {
                 }}
               />
             </Tilt>
-            
             {/* Floating elements */}
             {[...Array(6)].map((_, i) => (
               <motion.div
