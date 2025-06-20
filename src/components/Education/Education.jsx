@@ -10,7 +10,7 @@ const Education = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
+        <div className="w-32 h-1 bg-orange-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           My education has been a journey of learning and development. Here are the details of my academic background
         </p>
@@ -21,16 +21,16 @@ const Education = () => {
         {/* Vertical Timeline Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full"></div>
 
-        {/* Education Items (Starting with RIGHT side first) */}
+        {/* Education Items */}
         {education.map((edu, index) => (
           <div
             key={edu.id}
             className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start" // Changed from Experience version
+              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
             }`}
           >
             {/* Timeline Circle (Logo) */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-orange-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={edu.img}
                 alt={edu.school}
@@ -40,7 +40,7 @@ const Education = () => {
 
             {/* Education Card */}
             <div
-              className={`w-full sm:w-[38%] p-6 rounded-xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+              className={`w-full sm:w-[38%] p-6 rounded-xl border border-white bg-[#111112] backdrop-blur-md shadow-[0_0_32px_8px_rgba(251,146,60,0.18)] ${
                 index % 2 === 0 ? "sm:mr-16" : "sm:ml-16"
               } mt-8 sm:mt-0 min-h-[300px] hover:scale-105 transition-transform duration-300`}
             >
@@ -57,7 +57,7 @@ const Education = () => {
                   <h3 className="text-xl font-semibold text-white">
                     {edu.degree}
                   </h3>
-                  <h4 className="text-sm text-gray-300">
+                  <h4 className="text-sm text-orange-400">
                     {edu.school}
                   </h4>
                   <p className="text-xs text-gray-500 mt-1">
@@ -78,7 +78,7 @@ const Education = () => {
                     {edu.skills.map((skill, index) => (
                       <li
                         key={index}
-                        className="bg-[#8245ec] text-gray-300 px-3 py-1 text-xs rounded-lg border border-gray-400"
+                        className="bg-orange-500 text-gray-300 px-3 py-1 text-xs rounded-lg border border-gray-400"
                       >
                         {skill}
                       </li>

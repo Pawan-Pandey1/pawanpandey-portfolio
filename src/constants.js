@@ -33,15 +33,48 @@ import RGPS from './assets/education_logo/RoyalGondwana.jpg';
 import SOS from './assets/education_logo/sos.jpg';
 
 // // Project Section Logo's
-import contactHub from './assets/work_logo/SCM.jpg';
-// import csprepLogo from './assets/work_logo/cs_prep.png';
-// import movierecLogo from './assets/work_logo/movie_rec.png';
-// import taskremLogo from './assets/work_logo/task_rem.png';
-// import npmLogo from './assets/work_logo/npm.png';
-// import webverLogo from './assets/work_logo/web_dig.png';
-// import cmLogo from './assets/work_logo/cm.png';
-// import imagesearchLogo from './assets/work_logo/image_search.png';
-// import removebgLogo from './assets/work_logo/remove_bg.png';
+import scm0 from "./assets/work_logo/scm/scm0.png";
+import scm1 from "./assets/work_logo/scm/scm1.jpg";
+import scm2 from "./assets/work_logo/scm/scm2.jpg";
+import scm3 from "./assets/work_logo/scm/scm3.jpg";
+import scm4 from "./assets/work_logo/scm/scm4.jpg";
+import scm5 from "./assets/work_logo/scm/scm5.jpg";
+import scm6 from "./assets/work_logo/scm/scm6.jpg";
+import scm7 from "./assets/work_logo/scm/scm7.jpg";
+import scm8 from "./assets/work_logo/scm/scm8.jpg";
+
+import q0 from "./assets/work_logo/Quora/QuoraBackendeBanner.png";
+import q1 from "./assets/work_logo/Quora/createanswer.jpg";
+import q2 from "./assets/work_logo/Quora/getuserbyid.jpg";
+import q3 from "./assets/work_logo/Quora/createquestion.jpg";
+import q4 from "./assets/work_logo/Quora/getquestion.jpg";
+import q5 from "./assets/work_logo/Quora/likequestion.jpg";
+import q6 from "./assets/work_logo/Quora/updateanswer.jpg";
+import q7 from "./assets/work_logo/Quora/likeanswer.jpg";
+import q8 from "./assets/work_logo/Quora/createcomment.jpg";
+import q9 from "./assets/work_logo/Quora/getallcomment.jpg";
+import q10 from "./assets/work_logo/Quora/likecomment.jpg";
+import q11 from "./assets/work_logo/Quora/replycomment.jpg";
+import q12 from "./assets/work_logo/Quora/followuser.jpg";
+import q13 from "./assets/work_logo/Quora/getalltopics.jpg";
+
+
+import h0 from "./assets/work_logo/HMS/h0.png";
+import h1 from "./assets/work_logo/HMS/H1.jpg";
+import h2 from "./assets/work_logo/HMS/H2.jpg";
+
+
+
+import tour1 from "./assets/work_logo/tours/tour1.png";
+import tour2 from "./assets/work_logo/tours/tour2.png";
+import tour3 from "./assets/work_logo/tours/tour3.png";
+import tour4 from "./assets/work_logo/tours/tour4.png";
+import tour5 from "./assets/work_logo/tours/tour5.png";
+
+import v0 from "./assets/work_logo/VVA/vo.jpg";
+
+import r1 from "./assets/work_logo/ReferVerse/refer1.jpg";
+
 
 
 export const SkillsInfo = [
@@ -127,7 +160,7 @@ export const SkillsInfo = [
       date: "June 2023",
       desc: "I developed multiple projects using Python, focusing on creating efficient solutions for everyday scenarios. These projects utilized key Python libraries such as pandas for data manipulation, Tkinter for creating user-friendly graphical interfaces, and matplotlib for visualizing data.",
       skills: [
-        "Pthton",
+        "Python",
         "Tkinter",
         "Pandas",
         "Matplotlib",
@@ -141,7 +174,7 @@ export const SkillsInfo = [
       img: CU,
       school: "Chandigarh University, Mohali, Punjab",
       date: "Aug 2021 - July 2025",
-      grade: "8.44 CGPA",
+      grade: "8.54 CGPA",
       desc: "I have completed my Bachelor's degree (B.E. in Computer Science and Engineering) from Chandigarh University. During my time at Chandigarh University, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at Chandigarh University has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Bachelor of Engineering (Computer Science)",
     },
@@ -160,52 +193,201 @@ export const SkillsInfo = [
       school: "School of Scholars, Nagpur, Maharashtra",
       date: "Aug 2017 - March 2018",
       grade: "79.8%",
-      desc: "I completed my class 10 education from School of Scholars, Nagpur, Maharashtra, under the CBSE board, where I studied Science, Mathematics, English , Sanskrit and Social Science .",
+      desc: "I completed my class 10 education from School of Scholars, Nagpur, Maharashtra, under the CBSE board, where I studied Science, Mathematics, English, Sanskrit and Social Science .",
       degree: "CBSE(X)",
     },
   ];
   
-  export const projects = [
-    {
-      id: 0,
-      title: "ContactHub | Smart contact manager",
-      description:
-        "Developed a web-based Smart Contact Manager with secure authentication, user registration, and CRUD functionality, featuring a responsive frontend built with Thymeleaf, Tailwind CSS, and JavaScript. Integrated MySQL for efficient contact management.",
-      image: contactHub,
-      tags: ["HTML", "Tailwind CSS", "JavaScript", "Spring Boot", "Thymeleaf", "Spring Security"],
-      github: "https://github.com/Pawan-Pandey1/Contact-Hub",
-      webapp: "https://github.com/Pawan-Pandey1/Contact-Hub",
-    },
-    {
-      id: 1,
-      title: "Hospital Management System",
-      description:
-        "Built an API-based Hospital Management System for managing medical records and billing operations using Spring Boot and Hibernate. Ensured efficient database interactions with Spring Data JPA and MySQL.",
-      image: contactHub,
-      tags: ["Java", "Spring Boot", "MySql"],
-      github: "https://github.com/Pawan-Pandey1/HospitalManagementSystem",
-      webapp: "https://github.com/Pawan-Pandey1/HospitalManagementSystem",
-    },
-    {
-      id: 2,
-      title: "Tours and travel website",
-      description:
-        "Implemented an interactive tour itinerary using HTML, CSS, and JS. Used HTML for structuring the content, CSS for styling, and JavaScript to make the itinerary interactive and PHP for backend.",
-      image: contactHub,
-      tags: ["HTML", "CSS", "JavaScript", "PHP"],
-      github: "https://github.com/Pawan-Pandey1/Tours-And-Travel-Website/tree/master/Tour-Project-main",
-      webapp: "https://github.com/Pawan-Pandey1/Tours-And-Travel-Website/tree/master/Tour-Project-main",
-    },
-    {
-      id: 3,
-      title: "Virtual voice assistant",
-      description:
-        "Developed a Python-based virtual assistant with voice recognition and text-to-speech capabilities to perform tasks like playing YouTube videos, fetching information from Wikipedia, telling jokes, and managing web navigation.",
-      image: contactHub,
-      tags: ["Python", "speech_recognition", "pyttsx3"],
-      github: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
-      webapp: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
-    },
+
+export const projects = [
+ {
+  id: 0,
+  title: "ContactHub – Smart Contact Manager",
+  description: `
+ContactHub is a smart and secure contact management web application designed to streamline how users organize, manage, and interact with their contacts. Built using modern web technologies, it offers a seamless user experience with robust functionality and responsive design.
+
+🔐 Authentication & Security
+- Integrated OAuth2 authentication to enable secure login via Google and GitHub accounts.
+- Ensures safe and personalized access for each user to manage their contacts.
+
+🗂️ Core Features
+- Users can create, view, edit, and delete contacts in real-time.
+- Each contact record supports detailed fields including name, phone number, email, description, and favorite status.
+- Built-in pagination and search functionality for filtering contacts by name, email, or phone number.
+
+📤 Export & Feedback System
+- Users can export all their contact data in .CSV format, enabling easy backup or offline access.
+- A feedback form allows users to share their experience and suggestions with the application owner.
+
+🖼️ Cloud Integration
+- Integrated Cloudinary for efficient image storage and retrieval for contact profile pictures.
+
+💡 Tech Stack & Tools Used
+- Backend: Java with Spring Boot
+- Frontend: Thymeleaf template engine for dynamic content rendering
+- Styling: Tailwind CSS for responsive and modern UI
+- Icons: FlatIcons and Font Awesome for intuitive iconography
+- UI Components: Flowbite for pre-built Tailwind-based UI components like forms, modals, and tabs
+- Database: MySQL for persistent and relational data storage
+
+ContactHub is tailored for individuals or businesses looking for a clean, functional, and secure way to manage contacts with ease.
+`,
+  images: [scm0, scm1, scm2, scm3, scm4, scm5, scm6, scm7, scm8],
+  tags: [
+    "Spring Boot",
+    "Java",
+    "MySQL",
+    "Tailwind CSS",
+    "Thymeleaf",
+    "Cloudinary",
+    "OAuth2",
+    "Flowbite"
+  ],
+  github: "https://github.com/Pawan-Pandey1/Quora-API-Backend/tree/main",
+  webapp: "https://github.com/Pawan-Pandey1/Quora-API-Backend/tree/main",
+  },
+
+
+  {
+  id: 1,
+  title: "Quora Clone – Backend API",
+  description: `
+Quora Clone Backend API is a scalable and modular RESTful service built with Java and Spring Boot, designed to power a question-and-answer platform similar to Quora. It enables users to register, post questions, provide answers, comment on answers and comments, like content, follow other users, and organize content via topic tags.
+
+🗂️ Core Features
+- User registration and profile management
+- Posting, searching, and filtering questions by text and topics
+- Answer creation, editing, and nested commenting
+- Like system for questions, answers, and comments
+- Follow/unfollow functionality for users
+- Topic tagging for questions
+- Use of DTOs to prevent infinite recursion and control data exposure
+
+💡 Tech Stack & Tools Used
+- Backend: Java, Spring Boot
+- Database: MySQL for persistent and relational data storage
+- Testing: Postman
+
+`,
+  images: [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13],
+  tags: [
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "JPA", 
+    "Hibernate",
+    "UUID", 
+    "Postman"
+  ],
+  github: "https://github.com/Pawan-Pandey1/Contact-Hub",
+  webapp: "https://github.com/Pawan-Pandey1/Contact-Hub",
+  },
+  
+
+  {
+  id: 2,
+  title: "Hospital Management System – Backend API",
+  description: `
+Hospital Management System is a modular, scalable backend API designed to streamline hospital operations, built with Java, Spring Boot, and MySQL. It enables efficient management of patients, doctors, and billing records, supporting seamless integration with any frontend.
+
+
+🗂️ Core Features
+- Add, view, update, and delete Patients, Doctors, and Bills
+- Clean RESTful endpoints using standard HTTP methods
+- Layered architecture: Controller → Service → Repository
+- Relational mapping via JPA & Hibernate for robust data integrity
+
+
+💡 Tech Stack & Tools Used
+- Backend: Java, Spring Boot, Gradle
+- Database: MySQL with JPA/Hibernate ORM
+- Testing: Postman for API validation
+
+
+This backend API empowers hospitals to digitize and optimize their workflows, ensuring accurate record-keeping and billing. The open-source codebase is available for further enhancement and integration.
+`,
+  images: [h0,h1,h2],
+  tags: [
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "Postman",
+    "JPA", 
+    "Hibernate"
+  ],
+  github: "https://github.com/Pawan-Pandey1/HospitalManagementSystem",
+  webapp: "https://github.com/Pawan-Pandey1/HospitalManagementSystem",
+},
+
+
+
+  {
+    id: 3,
+    title: "Tours and travel website",
+    description:
+      "Implemented an interactive tour itinerary using HTML, CSS, and JS. Used HTML for structuring the content, CSS for styling, and JavaScript to make the itinerary interactive and PHP for backend.",
+    images: [tour1, tour2, tour3, tour4, tour5],
+    tags: ["HTML", "CSS", "JavaScript", "PHP"],
+    github: "https://github.com/Pawan-Pandey1/Tours-And-Travel-Website/tree/master/Tour-Project-main",
+    webapp: "https://github.com/Pawan-Pandey1/Tours-And-Travel-Website/tree/master/Tour-Project-main",
+  },
+
+
+  {
+    id: 4,
+    title: "Virtual voice assistant",
+    description:
+      "Developed a Python-based virtual assistant with voice recognition and text-to-speech capabilities to perform tasks like playing YouTube videos, fetching information from Wikipedia, telling jokes, and managing web navigation.",
+    images: [v0],
+    tags: ["Python", "speech_recognition", "pyttsx3"],
+    github: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
+    webapp: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
+  },
+ {
+    id: 6,
+  title: "ReferVerse – Career Referral & Mentorship Platform (In Progress)",
+  description: `
+ReferVerse is an ongoing full-stack project designed to connect job seekers with professionals for mentorship and referrals. Built using Spring Boot, React, MongoDB, and Redux, the platform allows users to discover and interact with industry experts who can guide or refer them based on skills and interests.
+
+🗂️ Core Goals
+- Allow users to request and offer job referrals
+- Enable professionals to guide and mentor aspirants
+- Role-based access and secure authentication system
+- Filter and search users based on skills and companies
+
+💡 Tech Stack & Tools Used
+- Frontend: React, Redux, Tailwind CSS
+- Backend: Java, Spring Boot
+- Database: MongoDB
+- State Management: Redux Toolkit
+- Additional: JWT Auth, RESTful APIs
+
+ReferVerse aims to bridge the gap between aspirants and professionals, encouraging a community-driven approach to referrals and career growth. This project is currently in development.
+`,
+  images: [r1], 
+  tags: [
+    "Spring Boot",
+    "React",
+    "MongoDB",
+    "Redux",
+    "JWT",
+    "REST API"
+  ],
+  github: "https://github.com/Pawan-Pandey1/ReferVerse",
+  webapp: "#", // Replace with the deployment link once live
+},
+
+  // {
+  //   id: 3,
+  //   title: "Virtual voice assistant",
+  //   description:
+  //     "Developed a Python-based virtual assistant with voice recognition and text-to-speech capabilities to perform tasks like playing YouTube videos, fetching information from Wikipedia, telling jokes, and managing web navigation.",
+  //   images: [scm1, scm2, scm3, scm4, scm5, scm6, scm7, scm8],
+  //   tags: ["Python", "speech_recognition", "pyttsx3"],
+  //   github: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
+  //   webapp: "https://github.com/Pawan-Pandey1/Virtual-Voice-Assistant",
+  // },
+
     // {
     //   id: 4,
     //   title: "Task Reminder Chrome Extension Tool",
